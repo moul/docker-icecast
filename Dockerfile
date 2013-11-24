@@ -7,15 +7,12 @@ RUN apt-get -q update
 RUN apt-get -q -y install icecast2
 
 ADD ./icecast.xml /etc/icecast2/
-
-# Command 1: better for application-like container
-#ENTRYPOINT ["icecast2"]
-#CMD ["-c", "/etc/icecast2/icecast.xml"]
-
-# Command 2: easier for debugging
-CMD ["icecast2", "-c", "/etc/icecast2/icecast.xml"]
+ADD run.sh /
+RUN chmod +x /run.sh
 
 USER icecast2
+
+CMD ["/run.sh"]
 
 EXPOSE 8000
 
