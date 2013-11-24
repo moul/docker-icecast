@@ -8,7 +8,8 @@ RUN apt-get -q -y install icecast2
 
 ADD ./icecast.xml /etc/icecast2/
 
-ENTRYPOINT ["icecast2", "-c", "/etc/icecast2/icecast.xml"]
+ENTRYPOINT ["icecast2"]
+CMD ["-c", "/etc/icecast2/icecast.xml"]
 
 USER icecast2
 
