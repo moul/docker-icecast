@@ -1,6 +1,6 @@
 #!/bin/sh
 
-icecast2 -b -c /etc/icecast2/icecast.xml
+icecast2 -b -c /etc/icecast2/icecast.xml $@
 
 sleep 1
 
