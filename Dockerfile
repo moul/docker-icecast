@@ -16,5 +16,4 @@ EXPOSE 8000
 VOLUME ["/config"]
 
 ADD ./etc /etc
-RUN chown icecast2 /etc/icecast2
- 
+RUN chown -R icecast2 /etc/icecast2
