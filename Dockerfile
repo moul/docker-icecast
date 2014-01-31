@@ -12,9 +12,10 @@ RUN apt-get -qq -y update && \
 RUN easy_install supervisor && \
     easy_install supervisor-stdout
 
-CMD ["supervisord", "-n", "-c", "/etc/supervisord.conf"]
+CMD ["/start.sh"]
 EXPOSE 8000
 VOLUME ["/config"]
 
+ADD ./start.sh /start.sh
 ADD ./etc /etc
 RUN chown -R icecast2 /etc/icecast2
