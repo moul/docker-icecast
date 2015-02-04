@@ -12,10 +12,10 @@ Run with default password, export port 8000
 
     docker run -p 8000:8000 moul/icecast
     $BROWSER localhost:8000
-    
+
 Run with custom password
 
-    docker run -p 8000:8000 -e SOURCE_PASSWORD=aaaa -e ADMIN_PASSWORD=bbbb -e PASSWORD=cccc -e RELAY_PASSWORD=dddd moul/icecast
+    docker run -p 8000:8000 -e ICECAST_SOURCE_PASSWORD=aaaa -e ICECAST_ADMIN_PASSWORD=bbbb -e ICECAST_PASSWORD=cccc -e ICECAST_RELAY_PASSWORD=dddd moul/icecast
 
 Run with custom configuration
 
