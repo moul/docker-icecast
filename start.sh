@@ -2,7 +2,9 @@
 
 env
 
-if [ -n "ICECAST_$SOURCE_PASSWORD" ]; then
+set -x
+
+if [ -n "$ICECAST_SOURCE_PASSWORD" ]; then
     sed -i "s/<source-password>[^<]*<\/source-password>/<source-password>$ICECAST_SOURCE_PASSWORD<\/source-password>/g" /etc/icecast2/icecast.xml
 fi
 
