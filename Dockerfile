@@ -13,7 +13,7 @@ RUN easy_install supervisor && \
 
 CMD ["/start.sh"]
 EXPOSE 8000
-VOLUME ["/config"]
+VOLUME ["/config", "/var/log/icecast2", "/etc/icecast2"]
 
 ADD ./start.sh /start.sh
 ADD ./etc /etc
