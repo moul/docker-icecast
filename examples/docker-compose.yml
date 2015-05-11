@@ -1,0 +1,12 @@
+icecast:
+  image: moul/icecast:latest
+  volumes:
+  - logs:/var/log/icecast2
+  - /etc/localtime:/etc/localtime:ro 
+  environment:
+  - ICECAST_SOURCE_PASSWORD=changeme
+  - ICECAST_ADMIN_PASSWORD=changeme
+  - ICECAST_PASSWORD=changeme
+  - ICECAST_RELAY_PASSWORD=changeme
+  ports:
+  - 8000:8000
