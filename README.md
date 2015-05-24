@@ -26,3 +26,8 @@ Extends Dockerfile
 
     FROM moul/icecast
     ADD ./icecast.xml /etc/icecast2
+
+Examples
+--------
+
+- https://github.com/ultreme/scc-radio/
