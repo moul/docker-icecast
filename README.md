@@ -1,12 +1,10 @@
-Icecast in Docker
-=================
+# Icecast in Docker [![Build Status](https://travis-ci.org/moul/docker-icecast.svg?branch=master)](https://travis-ci.org/moul/docker-icecast)
 
 Icecast2 Dockerfile
 
 https://index.docker.io/u/moul/icecast/
 
-Run
----
+## Run
 
 Run with default password, export port 8000
 
@@ -27,7 +25,6 @@ Extends Dockerfile
     FROM moul/icecast
     ADD ./icecast.xml /etc/icecast2
 
-Examples
---------
+## Examples
 
 - https://github.com/ultreme/scc-radio/
