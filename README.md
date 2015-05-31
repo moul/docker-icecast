@@ -2,7 +2,7 @@
 
 Icecast2 Dockerfile
 
-https://index.docker.io/u/moul/icecast/
+[![](http://dockeri.co/image/moul/icecast)](https://index.docker.io/u/moul/icecast/)
 
 ## Run
 
