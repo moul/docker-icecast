@@ -31,7 +31,7 @@ Extends Dockerfile
 ```Dockerfile
 FROM moul/icecast
 ADD ./icecast.xml /etc/icecast2
-```    
+```
 
 Docker-compose
 
@@ -40,7 +40,7 @@ icecast:
   image: moul/icecast
   volumes:
   - logs:/var/log/icecast2
-  - /etc/localtime:/etc/localtime:ro 
+  - /etc/localtime:/etc/localtime:ro
   environment:
   - ICECAST_SOURCE_PASSWORD=aaa
   - ICECAST_ADMIN_PASSWORD=bbb
@@ -53,3 +53,8 @@ icecast:
 ## Examples
 
 - https://github.com/ultreme/scc-radio/
+
+
+## License
+
+[MIT](https://github.com/moul/docker-icecast/raw/master/LICENSE.md)
