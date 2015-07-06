@@ -57,4 +57,4 @@ icecast:
 
 ## License
 
-[MIT](https://github.com/moul/docker-icecast/raw/master/LICENSE.md)
+[MIT](https://github.com/moul/docker-icecast/blob/master/LICENSE.md)
