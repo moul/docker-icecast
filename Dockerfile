@@ -14,8 +14,8 @@ RUN apt-get -qq -y update && \
     apt-get -qq -y install icecast2 python-setuptools && \
     apt-get clean
 
-RUN easy_install supervisor && \
-    easy_install supervisor-stdout
+RUN apt-get install -y python-pip \
+ && pip install supervisor-stdout
 
 CMD ["/start.sh"]
 EXPOSE 8000
