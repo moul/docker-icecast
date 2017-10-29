@@ -1,4 +1,4 @@
-FROM ubuntu:trusty
+FROM ubuntu:xenial
 
 MAINTAINER Manfred Touron "m@42.am"
 
@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get -qq -y update && \
     apt-get -y install wget && \
-    wget -qO - http://icecast.org/multimedia-obs.key | sudo apt-key add -
+    wget -qO - http://icecast.org/multimedia-obs.key | apt-key add -
     
 RUN echo "deb http://download.opensuse.org/repositories/multimedia:/xiph/xUbuntu_14.04/ ./" > /etc/apt/sources.list.d/icecast.list
 
