@@ -11,7 +11,7 @@ RUN apt-get -qq -y update && \
 RUN echo "deb http://download.opensuse.org/repositories/multimedia:/xiph/xUbuntu_14.04/ ./" > /etc/apt/sources.list.d/icecast.list
 
 RUN apt-get -qq -y update && \
-    apt-get -qq -y install icecast2 python-setuptools && \
+    apt-get -qq -y install icecast2 python-setuptools sudo && \
     apt-get clean
 
 RUN apt-get install -y python-pip \
