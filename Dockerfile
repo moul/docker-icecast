@@ -14,9 +14,6 @@ RUN apt-get -qq -y update && \
     apt-get -qq -y install icecast2 python-setuptools sudo && \
     apt-get clean
 
-RUN apt-get install -y python-pip \
- && pip install supervisor-stdout
-
 CMD ["/start.sh"]
 EXPOSE 8000
 VOLUME ["/config", "/var/log/icecast2", "/etc/icecast2"]
