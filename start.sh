@@ -9,8 +9,7 @@ set_val() {
         echo "set '$2' to '$1'"
         sed -i "s/<$2>[^<]*<\/$2>/<$2>$1<\/$2>/g" /etc/icecast2/icecast.xml
     else
-        echo "ERROR: setting for '$1' is missing!" >&2
-	exit
+        echo "Setting for '$1' is missing, skipping." >&2
     fi
 }
 
