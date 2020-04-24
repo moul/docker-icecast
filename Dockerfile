@@ -4,8 +4,7 @@ MAINTAINER Manfred Touron "m@42.am"
 
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN set + \
-  apt -qq -y update; \
+RUN apt -qq -y update; \
   apt -qq -y full-upgrade; \ 
   apt -qq -y install icecast2 python-setuptools sudo cron-apt; \
   apt -y autoclean; \
