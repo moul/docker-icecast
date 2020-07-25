@@ -17,6 +17,7 @@ set_val $ICECAST_SOURCE_PASSWORD source-password
 set_val $ICECAST_RELAY_PASSWORD  relay-password
 set_val $ICECAST_ADMIN_PASSWORD  admin-password
 set_val $ICECAST_PASSWORD        password
+set_val $ICECAST_HOSTNAME        hostname
 
 set -e
 
